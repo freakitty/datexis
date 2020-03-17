@@ -17,6 +17,10 @@ $(function () {
     $('.txt_clients').css('fill-opacity', '0');
   });
 
+  $('#g_lexique').click(function () {
+    window.location = 'lexique.html';
+  });
+  
   $('#g_lexique').mouseover(function () {
     $('.txt_lexique').css('fill-opacity', '1');
   });
@@ -146,6 +150,59 @@ $(function () {
       resetColorYellow();
     }
   });
+  
 
-
+});
+  $(document).ready(function() {
+  $(".toggle01").click(function() {
+    var elem = $(".toggle01").text();
+    if (elem == "Lire plus") {
+      //Stuff to do when btn is in the read more state
+      $(".toggle01").text("Lire moins");
+      $(".txt01").slideDown();
+    } else {
+      //Stuff to do when btn is in the read less state
+      $(".toggle01").text("Lire plus");
+      $(".txt01").slideUp();
+    }
+  });
+    
+      $(".toggle02").click(function() {
+    var elem = $(".toggle02").text();
+    if (elem == "Lire plus") {
+      //Stuff to do when btn is in the read more state
+      $(".toggle02").text("Lire moins");
+      $(".txt02").slideDown();
+    } else {
+      //Stuff to do when btn is in the read less state
+      $(".toggle02").text("Lire plus");
+      $(".txt02").slideUp();
+    }
+  });
+    
+    $(".toggle03").click(function() {
+    var elem = $(".toggle03").text();
+    if (elem == "Lire plus") {
+      //Stuff to do when btn is in the read more state
+      $(".toggle03").text("Lire moins");
+      $(".txt03").slideDown();
+    } else {
+      //Stuff to do when btn is in the read less state
+      $(".toggle32").text("Lire plus");
+      $(".txt03").slideUp();
+    }
+  });
+    
+    $(".toggle04").click(function() {
+    var elem = $(".toggle04").text();
+    if (elem == "Lire plus") {
+      //Stuff to do when btn is in the read more state
+      $(".toggle04").text("Lire moins");
+      $(".txt04").slideDown();
+    } else {
+      //Stuff to do when btn is in the read less state
+      $(".toggle04").text("Lire plus");
+      $(".txt04").slideUp();
+    }
+  });
 });

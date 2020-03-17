@@ -411,7 +411,7 @@ h2 {
     width: 150px;
     height: 3px;
     background-color: #2CD18A;
-    margin-top: 25px;
+    margin-top: 15px;
 }
 
 .intro p {
@@ -423,7 +423,7 @@ h2 {
 
 /* ========================================= MAP ========================================= */
 
-.main_map{
+.main_map {
     overflow-x: hidden;
 }
 
@@ -464,7 +464,7 @@ h4 {
     width: 70%;
 }
 
-.mapNav{
+.mapNav {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -475,11 +475,11 @@ h4 {
     margin-bottom: 50px;
 }
 
-.nav_dot{
+.nav_dot {
     width: 200px;
 }
 
-.dot{
+.dot {
     display: block;
     margin: 0 auto;
     margin-bottom: 10px;
@@ -491,12 +491,12 @@ h4 {
     transition: all .3s ease;
 }
 
-span{
+span {
     display: block;
     color: #D8D8D8;
 }
 
-.dot:hover{
+.dot:hover {
     background-color: #BDBCBC;
 }
 
@@ -504,28 +504,126 @@ span{
     color: red;
 }
 
-.dot_green.active{
+.dot_green.active {
     background-color: #2CD18A;
 }
 
-.dot_blue.active{
+.dot_blue.active {
     background-color: #0707E8;
 }
 
-.dot_yellow.active{
+.dot_yellow.active {
     background-color: #F3D210;
 }
 
-.greenText.active{
+.greenText.active {
     color: #2CD18A;
 }
 
-.blueText.active{
+.blueText.active {
     color: #0707E8;
 }
 
-.yellowText.active{
+.yellowText.active {
     color: #F3D210;
+}
+
+/* ========================================= LEXIQUE ========================================= */
+
+#img_grid {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -56;
+}
+
+.img_def {
+    margin-right: 25px;
+}
+
+#lexique {
+    padding: 40px 100px 90px 100px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.bloc_def{
+    margin-top: 70px;
+}
+
+.def {
+    display: flex;
+    align-items: flex-start;
+    width: 400px;
+    color: #5C5C5C;
+    font-size: .9em;
+    line-height: 20px;
+    font-weight: 100;
+    margin-top: 20px;
+}
+
+h5 {
+    font-family: 'Open sans', sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.lex_text {
+    color: #5C5C5C;
+    display: none;
+}
+
+/*--Button Styles--*/
+
+button {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    cursor: pointer;
+}
+
+button:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+.btn_lex {
+    margin-top: 10px;
+    border: 2px solid #5C5C5C;
+    color: #5C5C5C;
+    padding: .8rem 2rem;
+}
+
+.btn_lex .top {
+    height: 7px;
+}
+
+.btn_lex .bottom {
+    height: 7px;
+}
+
+.btn-slice .bottom span {
+    top: -7px;
+}
+
+.btn_lex:hover .top {
+    top: -5px;
+}
+
+.btn_lex:hover .bottom {
+    bottom: -5px;
+}
+
+.btn_lex:before {
+    background-color: #5C5C5C;
+}
+
+.btn-container {
+    margin-left: 70px;
 }
 
 /* ========================================= CONTACT ========================================= */
@@ -556,7 +654,7 @@ span{
     transition: all .3s ease;
 }
 
-#contact a:hover{
+#contact a:hover {
     color: #2CD18A;
 }
 
