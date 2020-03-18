@@ -9,6 +9,10 @@ $(function () {
   });
 
   /* ================= NAV ITEM HOME ================= */
+  $('#g_clients').click(function () {
+    window.location = 'nos-clients.html';
+  });
+  
   $("#g_clients").mouseover(function () {
     $(".txt_clients").css('fill-opacity', '1');
   });
@@ -206,3 +210,24 @@ $(function () {
     }
   });
 });
+
+
+ $(window).scroll(function () {
+        $(".anim .card").each(function () {
+            const position = $(this).offset().top;
+            const scroll = $(window).scrollTop();
+            const windowHeight = $(window).height();
+            if (scroll > position - windowHeight) {
+                $(this).addClass("active");
+            }
+            if (scroll < 100) {
+                $(this).removeClass("active");
+            }
+        });
+    });
+
+var mq = window.matchMedia("(max-width: 480px)");
+  
+    if (mq.matches) {
+         $('.anim').toggleClass('wrapp');
+    }
