@@ -130,7 +130,7 @@ $(function () {
 
   $('#donnees').on({
     'click': function () {
-      $('#carte01').attr('src', '../images/carte-enrichissementdonnees-vert.png');
+      $('#carte01').attr('src', 'images/carte-enrichissementdonnees-vert.png');
       $('.title_map').html("Enrichissement des données");
       colorGreen();
       resetColorGreen();
@@ -139,7 +139,7 @@ $(function () {
 
   $('#ad_post').on({
     'click': function () {
-      $('#carte01').attr('src', '../images/carte-redressementpostal-bleu.png');
+      $('#carte01').attr('src', 'images/carte-redressementpostal-bleu.png');
       $('.title_map').html("Redressement des adresses postales");
       colorBlue();
       resetColorBlue();
@@ -148,7 +148,7 @@ $(function () {
 
   $('#robinson').on({
     'click': function () {
-      $('#carte01').attr('src', '../images/carte-Robinson-jaune.png');
+      $('#carte01').attr('src', 'images/carte-Robinson-jaune.png');
       $('.title_map').html("Data privacy - Robinson");
       colorYellow();
       resetColorYellow();
