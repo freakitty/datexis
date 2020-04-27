@@ -44,6 +44,10 @@ $(function () {
   $('#g_contact').mouseout(function () {
     $('.txt_contact').css('fill-opacity', '0');
   });
+  
+  $('#g_actu').click(function () {
+    window.location = 'actualites.html';
+  });
 
   $('#g_actu').mouseover(function () {
     $('.txt_actu').css('fill-opacity', '1');
