@@ -9,10 +9,12 @@ body {
 
 .white_body {
     background-color: #FFF;
+    color: #5C5C5C;
 }
 
 .black_bg {
     background-color: #2F2F2F;
+    color: #F8F8F8;
 }
 
 /* ====================== MENU ====================== */
@@ -445,14 +447,22 @@ video {
 
 .txt_valeurs {
     margin: 0 auto;
-    width: 550px;
+    width: 700px;
     font-weight: 100;
     line-height: 25px;
+    text-align: center;
 }
 
-.subtitle_valeurs {
+.intro-valeur{
+    margin: 0 auto;
+    width: 550px;
+}
+
+.subtitle{
     font-weight: 600;
     margin-bottom: 15px;
+    line-height: 25px;
+    font-size: 1.2em;
 }
 
 .nosValeurs {
@@ -460,7 +470,7 @@ video {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     align-content: space-around;
 }
 
@@ -481,6 +491,11 @@ video {
     font-weight: 100;
     line-height: 20px;
     text-align: center;
+     font-size: .9em;
+}
+
+.valeur-humain{
+    width: 300px;
 }
 
 .bannerHideAbout {
@@ -549,10 +564,6 @@ video {
     margin-bottom: 60px;
 }
 
-.resultats_dat {
-    margin-top: -200px;
-}
-
 .anim {
     display: flex;
     justify-content: center;
@@ -574,6 +585,105 @@ video {
     opacity: 1;
     transform: translate3d(0, 0, 0);
 }
+
+.review {
+    margin-top: -200px;
+    padding-bottom: 50px;
+}
+
+.review img {
+    max-width: 100%;
+    height: auto;
+    -webkit-transition: -webkit-transform 1s ease-out;
+    transition: -webkit-transform 1s ease-out;
+    transition: transform 1s ease-out;
+    transition: transform 1s ease-out, -webkit-transform 1s ease-out;
+}
+
+.review-card {
+    max-width: 280px;
+    height: 490px;
+    margin: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+    -webkit-transition: -webkit-transform .3s ease-out;
+    transition: -webkit-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+    border-radius: 1em 1em 0.5em 0.5em;
+}
+
+.review-card:hover {
+    -webkit-transform: scale(1.08);
+    transform: scale(1.08);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-card:hover .article-card__excerpt {
+    line-height: 20px;
+    font-weight: 100;
+    font-size: .8em;
+    height: 136px;
+    visibility: visible;
+}
+
+.review-card:hover .review-card__thumbnail {
+    height: 170px;
+}
+
+.review-card:hover .review-card__thumbnail img {
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+}
+
+.review-card__thumbnail {
+    overflow: hidden;
+    height: 286px;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    border-radius: .5em .5em 0 0;
+    overflow: hidden;
+}
+
+.review-card__thumbnail img {
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.review-card__content {
+    padding: 30px;
+}
+
+.review-card__title {
+    margin: 0;
+    font-size: 1.5em;
+    line-height: 1.3em;
+    margin-bottom: 10px;
+}
+
+.review-card__meta {
+    color: #777;
+}
+
+.review-card__meta i {
+    margin-right: 5px;
+    display: inline-block;
+    font-size: 15px;
+}
+
+.review-card__timestamp {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.review-card__excerpt {
+    height: 1px;
+    visibility: hidden;
+    overflow: hidden;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
 
 /* ========================================= MAP ========================================= */
 
@@ -794,10 +904,6 @@ button:focus {
     align-content: space-around;
 }
 
-.actus .anim .card {
-    transition: all .6s ease;
-}
-
 .actus a,
 a:hover,
 a:active,
@@ -817,7 +923,8 @@ a:visited {
 .article-card {
     max-width: 350px;
     height: 490px;
-    background: #202020;
+    margin: 20px;
+    background: #2F2F2F;
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
     -webkit-transition: -webkit-transform .3s ease-out;
     transition: -webkit-transform .3s ease-out;
@@ -907,6 +1014,132 @@ a:visited {
     margin-left: 0;
 }
 
+
+/* ========================================= SOLUTIONS ========================================= */
+
+.logo_solutions{
+    position: fixed;
+}
+
+#pinContainer {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.panel {
+   height: 100vh;
+    width: 100%;
+    position: absolute;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.visuel_solu{
+    width: 25%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10%;
+}
+
+.solu_expl{
+    position: absolute;
+    top: 16%;
+    left: 45%;
+    width: 600px;
+    font-weight: 100;
+    line-height: 25px;
+    font-size: .9em;
+}
+
+.sub{
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    line-height: 28px;
+}
+
+b{
+    font-weight: 600;
+}
+
+.solu_expl h2{
+    color: #2CD18A;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.interets{
+    margin-top: 25px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: space-around;
+}
+
+.bloc_interet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    flex-direction: column;
+    font-size: .9em;
+}
+
+.icon_interets{
+    width: 28%;
+    margin-bottom: 5px;
+}
+
+/* DOT NAV */
+#dot-nav {
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: -50px;
+    height: 100px;
+    z-index: 999;
+}
+
+#dot-nav ul {
+    list-style: none;
+}
+
+#dot-nav li {
+    position: relative;
+    background-color: #D8D8D8;
+    border-radius: 15px 15px 15px 15px;
+    padding: 5px;
+    margin-right: 5px;
+    height: 10px;
+    width: 10px;
+}
+
+#dot-nav a{
+    width: 100px;
+    height: 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #D8D8D8;
+    font-size: .7em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: space-around;
+    transition: all 3s ease;
+}
+
+#dot-nav li:hover {
+    background-color: #2CD18A;
+}
+
+#dot-nav:hover{
+    color: #2CD18A;
+
+}
+
 /* ========================================= CONTACT ========================================= */
 
 #scene {
@@ -964,7 +1197,7 @@ a:visited {
 
 /* ====================== FOOTER ====================== */
 .footer_fixed {
-    position: absolute;
+    position: fixed;
     bottom: 0;
 }
 

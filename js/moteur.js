@@ -56,6 +56,10 @@ $(function () {
   $('#g_actu').mouseout(function () {
     $('.txt_actu').css('fill-opacity', '0');
   });
+  
+  $('#g_solutions').click(function () {
+    window.location = 'nos-solutions.html';
+  });
 
   $('#g_solutions').mouseover(function () {
     $('.txt_solutions').css('fill-opacity', '1');
@@ -235,3 +239,199 @@ var mq = window.matchMedia("(max-width: 480px)");
     if (mq.matches) {
          $('.anim').toggleClass('wrapp');
     }
+
+
+
+$(function () {
+    "use strict";
+  
+ 
+   var controller = new ScrollMagic.Controller({
+  globalSceneOptions: {
+      triggerHook: "onLeave"
+  }
+});
+      
+      function greenDotPostal() {
+        $('#dot-nav #dot-postal li').css('background-color',"#2CD18A");
+        $('#dot-nav #dot-postal p').css('color',"#2CD18A");
+    }
+      
+      function greenDotEmail() {
+        $('#dot-nav #dot-email li').css('background-color',"#2CD18A");
+        $('#dot-nav #dot-email p').css('color',"#2CD18A");
+    }
+
+      function greenDotBtob() {
+        $('#dot-nav #dot-btob li').css('background-color',"#2CD18A");
+        $('#dot-nav #dot-btob p').css('color',"#2CD18A");
+    }
+      
+      function greenDotTerritory() {
+        $('#dot-nav #dot-territory li').css('background-color',"#2CD18A");
+        $('#dot-nav #dot-territory p').css('color',"#2CD18A");
+    }
+      
+      function greenDotPrivacy() {
+        $('#dot-nav #dot-privacy li').css('background-color',"#2CD18A");
+        $('#dot-nav #dot-privacy p').css('color',"#2CD18A");
+    }
+      
+      function greenDotConseil() {
+        $('#dot-nav #dot-conseil li').css('background-color',"#2CD18A");
+        $('#dot-nav #dot-conseil p').css('color',"#2CD18A");
+    }
+  
+  function greenReset() {
+        $('#dot-nav li').css('background-color','#D8D8D8');
+        $('#dot-nav p').css('color',"#D8D8D8");
+    }
+  
+   function tweenreset() {
+        TweenMax.to('#wipe', 0.7, {top: "100%", delay: 0.2});
+        TweenMax.to('#second-wipe', 0.7, {top: "100%", delay: 0.2});
+        TweenMax.to('#slide', 0.7, {top: "-100%", delay: 0.2});
+        TweenMax.to('#slide-two', 0.7, {left: "-100%", delay: 0.2});
+        TweenMax.to('#third-wipe', 0.7, {top: "100%", delay: 0.2});
+    }   
+    
+  
+  
+ $("#dot-postal").on('click', function () {
+       greenReset(),
+    greenDotPostal(),
+        tweenreset();
+    });
+
+ $("#dot-email").on('click', function () {
+       greenReset(),
+    greenDotEmail(),
+   tweenreset()
+     var scrollAnim = new TimelineMax()
+     .scrollTo(TweenMax.to("#wipe", 1, {top: "0%", delay: 0.2}))
+    });
+
+   $("#dot-btob").on('click', function () {
+         greenReset(),
+    greenDotBtob(),
+     tweenreset()
+    var scrollAnim = new TimelineMax()
+        .scrollTo(TweenMax.to("#second-wipe", 1, {top: "0%", delay: 0.2}))
+     
+    });
+  
+  $("#dot-territory").on('click', function () {
+        greenReset(),
+    greenDotTerritory(),
+    tweenreset()
+    var scrollAnim = new TimelineMax()
+        .add(TweenMax.to("#slide", 1, {top: "0%", delay: 0.2}))
+    });
+  
+  
+  $("#dot-privacy").on('click', function () {
+        greenReset(),
+    greenDotPrivacy(),
+    tweenreset()
+    var scrollAnim = new TimelineMax()
+       .add(TweenMax.to("#slide-two", 1, {left: "0%", delay: 0.2}))
+    });
+  
+  $("#dot-conseil").on('click', function () {
+        greenReset(),
+    greenDotConseil(),
+    tweenreset()
+    var scrollAnim = new TimelineMax()
+      .add(TweenMax.to("#third-wipe", 1, {top: "0%", delay: 0.2}))
+    });
+  
+  
+
+var scrollAnim = new TimelineMax()
+    .add(TweenMax.to("#wipe", 1, {top: "0%", delay: 0.2}))
+.add([
+       TweenMax.to("#dot-nav #dot-email li", 0.1, {backgroundColor: "#2CD18A"}),
+        TweenMax.to("#dot-nav #dot-email p", 0.1, {color: "#2CD18A"}),
+  TweenMax.to("#dot-nav #dot-postal li", 0.1, {backgroundColor: "#D8D8D8"}),
+        TweenMax.to("#dot-nav #dot-postal p", 0.1, {color: "#D8D8D8"}),
+  TweenMax.to("#dot-nav #dot-btob li", 0.1, {backgroundColor: "#D8D8D8"}),
+        TweenMax.to("#dot-nav #dot-btob p", 0.1, {color: "#D8D8D8"}),
+  TweenMax.to("#dot-nav #dot-territory li", 0.1, {backgroundColor: "#D8D8D8"}),
+        TweenMax.to("#dot-nav #dot-territory p", 0.1, {color: "#D8D8D8"}),
+  TweenMax.to("#dot-nav #dot-privacy li", 0.1, {backgroundColor: "#D8D8D8"}),
+        TweenMax.to("#dot-nav #dot-privacy p", 0.1, {color: "#D8D8D8"}),
+  TweenMax.to("#dot-nav #dot-conseil li", 0.1, {backgroundColor: "#D8D8D8"}),
+        TweenMax.to("#dot-nav #dot-conseil p", 0.1, {color: "#D8D8D8"})
+    ])
+    .add(TweenMax.to("#second-wipe", 1, {top: "0%", delay: 0.2}))
+.add([
+      TweenMax.to("#dot-nav #dot-btob li", 0.1, {backgroundColor: "#2CD18A"}),
+        TweenMax.to("#dot-nav #dot-btob p", 0.1, {color: "#2CD18A"}),
+   TweenMax.to("#dot-nav #dot-postal li", 0.1, {backgroundColor: "#D8D8D8"}),
+        TweenMax.to("#dot-nav #dot-postal p", 0.1, {color: "#D8D8D8"}),
+  TweenMax.to("#dot-nav #dot-email li", 0.1, {backgroundColor: "#D8D8D8"}),
+        TweenMax.to("#dot-nav #dot-email p", 0.1, {color: "#D8D8D8"}),
+  TweenMax.to("#dot-nav #dot-territory li", 0.1, {backgroundColor: "#D8D8D8"}),
+        TweenMax.to("#dot-nav #dot-territory p", 0.1, {color: "#D8D8D8"}),
+  TweenMax.to("#dot-nav #dot-privacy li", 0.1, {backgroundColor: "#D8D8D8"}),
+        TweenMax.to("#dot-nav #dot-privacy p", 0.1, {color: "#D8D8D8"}),
+  TweenMax.to("#dot-nav #dot-conseil li", 0.1, {backgroundColor: "#D8D8D8"}),
+        TweenMax.to("#dot-nav #dot-conseil p", 0.1, {color: "#D8D8D8"})
+    ])
+    .add(TweenMax.to("#slide", 1, {top: "0%", delay: 0.2}))
+.add([
+  TweenMax.to("#dot-nav #dot-territory li", 0.1, {backgroundColor: "#2CD18A"}),
+        TweenMax.to("#dot-nav #dot-territory p", 0.1, {color: "#2CD18A"}),
+  TweenMax.to("#dot-nav #dot-btob li", 0.1, {backgroundColor: "#D8D8D8"}),
+        TweenMax.to("#dot-nav #dot-btob p", 0.1, {color: "#D8D8D8"}),
+   TweenMax.to("#dot-nav #dot-privacy li", 0.1, {backgroundColor: "#D8D8D8"}),
+        TweenMax.to("#dot-nav #dot-privacy p", 0.1, {color: "#D8D8D8"}),
+  TweenMax.to("#dot-nav #dot-conseil li", 0.1, {backgroundColor: "#D8D8D8"}),
+        TweenMax.to("#dot-nav #dot-conseil p", 0.1, {color: "#D8D8D8"}),
+  TweenMax.to("#dot-nav #dot-postal li", 0.1, {backgroundColor: "#D8D8D8"}),
+        TweenMax.to("#dot-nav #dot-postal p", 0.1, {color: "#D8D8D8"}),
+  TweenMax.to("#dot-nav #dot-email li", 0.1, {backgroundColor: "#D8D8D8"}),
+        TweenMax.to("#dot-nav #dot-email p", 0.1, {color: "#D8D8D8"})
+    ])
+    .add(TweenMax.to("#slide-two", 1, {left: "0%", delay: 0.2}))
+.add([
+  TweenMax.to("#dot-nav #dot-territory li", 0.1, {backgroundColor: "#D8D8D8"}),
+        TweenMax.to("#dot-nav #dot-territory p", 0.1, {color: "#D8D8D8"}),
+  TweenMax.to("#dot-nav #dot-privacy li", 0.1, {backgroundColor: "#2CD18A"}),
+        TweenMax.to("#dot-nav #dot-privacy p", 0.1, {color: "#2CD18A"}),
+  TweenMax.to("#dot-nav #dot-conseil li", 0.1, {backgroundColor: "#D8D8D8"}),
+        TweenMax.to("#dot-nav #dot-conseil p", 0.1, {color: "#D8D8D8"}),
+  TweenMax.to("#dot-nav #dot-postal li", 0.1, {backgroundColor: "#D8D8D8"}),
+        TweenMax.to("#dot-nav #dot-postal p", 0.1, {color: "#D8D8D8"}),
+  TweenMax.to("#dot-nav #dot-email li", 0.1, {backgroundColor: "#D8D8D8"}),
+        TweenMax.to("#dot-nav #dot-email p", 0.1, {color: "#D8D8D8"}),
+  TweenMax.to("#dot-nav #dot-btob p", 0.1, {color: "#D8D8D8"}),
+   TweenMax.to("#dot-nav #dot-btob li", 0.1, {backgroundColor: "#D8D8D8"})
+    ])
+.add(TweenMax.to("#third-wipe", 1, {top: "0%", delay: 0.2}))
+.add([
+  TweenMax.to("#dot-nav #dot-privacy li", 0.1, {backgroundColor: "#D8D8D8"}),
+        TweenMax.to("#dot-nav #dot-privacy p", 0.1, {color: "#D8D8D8"}),
+  TweenMax.to("#dot-nav #dot-conseil li", 0.1, {backgroundColor: "#2CD18A"}),
+        TweenMax.to("#dot-nav #dot-conseil p", 0.1, {color: "#2CD18A"}),
+   TweenMax.to("#dot-nav #dot-postal li", 0.1, {backgroundColor: "#D8D8D8"}),
+        TweenMax.to("#dot-nav #dot-postal p", 0.1, {color: "#D8D8D8"}),
+  TweenMax.to("#dot-nav #dot-email li", 0.1, {backgroundColor: "#D8D8D8"}),
+        TweenMax.to("#dot-nav #dot-email p", 0.1, {color: "#D8D8D8"}),
+  TweenMax.to("#dot-nav #dot-btob p", 0.1, {color: "#D8D8D8"}),
+   TweenMax.to("#dot-nav #dot-btob li", 0.1, {backgroundColor: "#D8D8D8"}),
+  TweenMax.to("#dot-nav #dot-territory li", 0.1, {backgroundColor: "#D8D8D8"}),
+        TweenMax.to("#dot-nav #dot-territory p", 0.1, {color: "#D8D8D8"})
+    ])
+
+
+new ScrollMagic.Scene({
+  triggerElement: "section#pin",
+  duration: '100%'
+})
+.setTween(scrollAnim)
+.setPin("section#pin")
+.addTo(controller);
+    
+    
+  });
