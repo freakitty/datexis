@@ -503,7 +503,60 @@ video {
 }
 
 .data {
-    margin-top: -400px;
+    margin-top: -450px;
+}
+
+#data-visu{
+    margin: -300px 0 140px 0;
+}
+
+#data-visu img{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.data-title{
+    text-transform: uppercase;
+    color: #2CD18A;
+    font-family: 'Unica One', sans-serif;
+    font-weight: 100;
+    font-size: 1.3em;
+}
+
+.data-number{
+    color: #2CD18A;
+    font-family: 'Unica One', sans-serif;
+    font-weight: 700;
+    font-size: 2.2em;
+}
+
+.card-data{
+    display: flex;
+    flex-direction: column;
+}
+
+.anim-data{
+    position: relative;
+}
+.routage{
+    left: 4%;
+    top: 360px;
+}
+
+.traitement{
+    right: 28%;
+    top: 450px;
+}
+
+.reactivation{
+    right: 15%;
+    top: 540px;
+}
+
+.generation{
+    left: 20%;
+    top: 190px;
 }
 
 /* ========================================= CLIENTS ========================================= */
@@ -517,25 +570,8 @@ video {
     right: 0;
     top: 10%;
     width: 50%;
-    /*animation: floatImg 4s ease-in-out infinite;
-    transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;*/
 }
 
-/*
-@keyframes floatImg {
-    0% {
-        transform: translateY(14%);
-    }
-
-    50% {
-        transform: translateY(calc(14% - 1vw));
-    }
-
-    100% {
-        transform: translateY(14%);
-    }
-}
-*/
 .bannerHide {
     margin-top: 20%;
     z-index: 100;
@@ -883,7 +919,7 @@ button:focus {
 }
 
 .btn_lex:before {
-    background-color: #5C5C5C;
+    background-color: #ffffff;
 }
 
 .btn-container {
@@ -1012,132 +1048,6 @@ a:visited {
 
 .btn-container_articles {
     margin-left: 0;
-}
-
-
-/* ========================================= SOLUTIONS ========================================= */
-
-.logo_solutions{
-    position: fixed;
-}
-
-#pinContainer {
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-}
-
-.panel {
-   height: 100vh;
-    width: 100%;
-    position: absolute;
-    font-family: 'Open Sans', sans-serif;
-}
-
-.visuel_solu{
-    width: 25%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 10%;
-}
-
-.solu_expl{
-    position: absolute;
-    top: 16%;
-    left: 45%;
-    width: 600px;
-    font-weight: 100;
-    line-height: 25px;
-    font-size: .9em;
-}
-
-.sub{
-    font-weight: 600;
-    margin-bottom: 20px;
-    font-size: 1.2em;
-    line-height: 28px;
-}
-
-b{
-    font-weight: 600;
-}
-
-.solu_expl h2{
-    color: #2CD18A;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-
-.interets{
-    margin-top: 25px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: flex-start;
-    align-content: space-around;
-}
-
-.bloc_interet{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 170px;
-    flex-direction: column;
-    font-size: .9em;
-}
-
-.icon_interets{
-    width: 28%;
-    margin-bottom: 5px;
-}
-
-/* DOT NAV */
-#dot-nav {
-    position: fixed;
-    left: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-top: -50px;
-    height: 100px;
-    z-index: 999;
-}
-
-#dot-nav ul {
-    list-style: none;
-}
-
-#dot-nav li {
-    position: relative;
-    background-color: #D8D8D8;
-    border-radius: 15px 15px 15px 15px;
-    padding: 5px;
-    margin-right: 5px;
-    height: 10px;
-    width: 10px;
-}
-
-#dot-nav a{
-    width: 100px;
-    height: 20px;
-    margin-bottom: 20px;
-    text-decoration: none;
-    color: #D8D8D8;
-    font-size: .7em;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    align-content: space-around;
-    transition: all 3s ease;
-}
-
-#dot-nav li:hover {
-    background-color: #2CD18A;
-}
-
-#dot-nav:hover{
-    color: #2CD18A;
-
 }
 
 /* ========================================= CONTACT ========================================= */
