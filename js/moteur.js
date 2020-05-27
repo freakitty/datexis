@@ -162,9 +162,37 @@ $(function () {
       resetColorYellow();
     }
   });
-  
 
+  
+  
+  $('.owl-nome').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    dots: true,
+    navText: [
+      "<i class='fa fa-angle-left'></i>",
+      "<i class='fa fa-angle-right'></i>"
+      ],
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:4
+        }
+    }
+})
+  
+  
+  
 });
+
+ /* ================= BUTTON READ MORE ================= */
+
   $(document).ready(function() {
   $(".toggle01").click(function() {
     var elem = $(".toggle01").text();
@@ -192,7 +220,9 @@ $(function () {
     }
   });
     
-    $(".toggle03").click(function() {
+
+    
+       $(".toggle03").click(function() {
     var elem = $(".toggle03").text();
     if (elem == "Lire plus") {
       //Stuff to do when btn is in the read more state
@@ -200,10 +230,12 @@ $(function () {
       $(".txt03").slideDown();
     } else {
       //Stuff to do when btn is in the read less state
-      $(".toggle32").text("Lire plus");
+      $(".toggle03").text("Lire plus");
       $(".txt03").slideUp();
     }
   });
+    
+    
     
     $(".toggle04").click(function() {
     var elem = $(".toggle04").text();
@@ -219,6 +251,7 @@ $(function () {
   });
 });
 
+ /* ================= ANIM CARD ================= */
 
  $(window).scroll(function () {
         $(".anim .card").each(function () {
@@ -240,7 +273,7 @@ var mq = window.matchMedia("(max-width: 480px)");
          $('.anim').toggleClass('wrapp');
     }
 
-
+ /* ================= SCROLL SOLUTIONS ================= */
 
 $(function () {
     "use strict";
